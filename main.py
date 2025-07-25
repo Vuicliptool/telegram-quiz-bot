@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Lấy token từ biến môi trường
-TOKEN = os.getenv("TOKEN")
+TOKEN = "6737085704:AAFuXOG0aQ6xBldCJYfiqWOIquOcH8PNNek"
 if not TOKEN:
     raise ValueError("❌ Thiếu biến môi trường TOKEN!")
 
