@@ -4,10 +4,7 @@ import os
 import json
 
 app = Flask(__name__)
-TOKEN = os.getenv("TOKEN")
-if not TOKEN:
-    raise ValueError("❌ Thiếu biến môi trường TOKEN!")
-
+TOKEN = "6737085704:AAFuXOG0aQ6xBldCJYfiqWOIquOcH8PNNek"
 URL = f"https://api.telegram.org/bot{TOKEN}/"
 
 # Load câu hỏi từ file JSON
