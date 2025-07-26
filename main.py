@@ -10,23 +10,9 @@ if not TOKEN:
 
 URL = f"https://api.telegram.org/bot{TOKEN}/"
 
-questions = [
-    {
-        "question": "🇻🇳 Thủ đô của Việt Nam là gì?",
-        "options": ["Hồ Chí Minh", "Hà Nội", "Đà Nẵng", "Huế"],
-        "answer": 1
-    },
-    {
-        "question": "🔢 5 x 6 bằng bao nhiêu?",
-        "options": ["30", "11", "60", "56"],
-        "answer": 0
-    },
-    {
-        "question": "🌍 Trái đất quay quanh gì?",
-        "options": ["Mặt trời", "Mặt trăng", "Sao Hỏa", "Sao Kim"],
-        "answer": 0
-    }
-]
+# Load câu hỏi từ file JSON
+with open("questions.json", "r", encoding="utf-8") as f:
+    questions = json.load(f)
 
 user_state = {}
 
